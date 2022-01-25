@@ -136,7 +136,7 @@ module.exports = function(grunt) {
     grunt.log.writeln('执行 d1 name', grunt.config(['meta', 'name']));
     return true;
   });
-
+  /** 任务别名 */
   // 定义 default 任务别名，执行 default 就是依次执行后面列表中的任务
   // default 可以不传 直接执行 grunt
   grunt.registerTask('default', ['concat', 'uglify', 'jshint']);
